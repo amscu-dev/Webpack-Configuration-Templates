@@ -3,8 +3,8 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import { fileURLToPath } from "url";
 
 // Necesare pentru compatibilitate cu __dirname și __filename
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url); // Obține calea completă a fișierului curent
+const __dirname = path.dirname(__filename); // Obține directorul curent al fișierului
 
 // Configurarea Webpack folosind ESM (export default)
 export default {
